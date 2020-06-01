@@ -75,7 +75,6 @@ namespace eureka_blocks {
   }
 
   //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="青信号 点灯|%mode| |%pin|" group="1_信号機ユニット"
-  //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=10
   export function eureka_tl_blue(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
@@ -93,7 +92,6 @@ namespace eureka_blocks {
     }
   }
   //% color="#ffa800" weight=53 blockId=eureka_tl_yellow block="黄信号 点灯|%mode| |%pin|" group="1_信号機ユニット"
-  //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4
   export function eureka_tl_yellow(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
@@ -111,7 +109,6 @@ namespace eureka_blocks {
     }
   }
   //% color="#ff4940" weight=52 blockId=eureka_tl_red block="赤信号 点灯|%mode| |%pin|" group="1_信号機ユニット"
-  //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4
   export function eureka_tl_red(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
@@ -255,7 +252,6 @@ namespace eureka_blocks {
   }
 
   //% color="#525252" weight=18 blockId=eureka_relay block="単体_ﾘﾚｰ(ﾃﾞｼﾞﾀﾙ) |%mode| |%pin|" group="3_ユーレカ装置"
-  //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=10
   export function eureka_relay(mode: onoff, pin: eureka_IO) {
     switch (pin) {
       case eureka_IO.Aﾎﾟｰﾄ:
@@ -278,10 +274,9 @@ namespace eureka_blocks {
         }
     }
   }
-  //% color="#525252" weight=18 blockId=eureka_relay_2 block="FETﾘﾚｰ(ｱﾅﾛｸﾞ出力) |%limit| |%syuturyoku|" group="3_ユーレカ装置"
-  //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=10
+  //% color="#525252" weight=19 blockId=eureka_relay_2 block="FETﾘﾚｰ(ｱﾅﾛｸﾞ出力) |%limit| |%syuturyoku|" group="3_ユーレカ装置"
   //% syuturyoku.min=0 syuturyoku.max=1023
-  export function eureka_relay_2(syuturyoku: number, pin: eureka_IO) {
+  export function eureka_relay_2( syuturyoku : number, pin: eureka_IO) {
     switch (pin) {
       case eureka_IO.Aﾎﾟｰﾄ:{
         return pins.analogWritePin(AnalogPin.P0, syuturyoku);
