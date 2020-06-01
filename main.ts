@@ -459,10 +459,10 @@ namespace eureka_blocks {
   }
 }
 
-//% color="#f5a142" block="ﾕｰﾚｶ車" icon="\uf1b9"
-namespace eureka_blocks_car {
+//% color="#f071bd" block="ﾕｰﾚｶ車" icon="\uf1b9"
+namespace eureka_blocks_car_2 {
 
-  //% weight=6 blockId=sonar_ping block="ﾕｰﾚｶ車距離ｾﾝｻ" group="基本のうごき"
+  //% weight=6 blockId=sonar_ping block_2="ﾕｰﾚｶ車距離ｾﾝｻ" group="基本のうごき"
   export function ping() {
     // send
     pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
