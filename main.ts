@@ -357,7 +357,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#009A00" weight=9 block="単体_人が動いたら |%pin|" group="4_センサの値"
+  //% color="#858585" weight=9 block="単体_人が動いたら |%pin|" group="4_センサの値"
   export function tantai_humanDetection(pin: eureka_IO): boolean {
     pins.setPull(DigitalPin.P14, PinPullMode.PullNone);
     pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
@@ -460,9 +460,9 @@ namespace eureka_blocks {
 }
 
 //% color="#f071bd" block="ﾕｰﾚｶ車" icon="\uf1b9"
-namespace eureka_blocks_car_2 {
+namespace eureka_blocks_car {
 
-  //% weight=6 blockId=sonar_ping block_2="ﾕｰﾚｶ車距離ｾﾝｻ" group="基本のうごき"
+  //% weight=6 blockId=sonar_ping_2 block="ﾕｰﾚｶ車距離ｾﾝｻ" group="基本のうごき"
   export function ping() {
     // send
     pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
