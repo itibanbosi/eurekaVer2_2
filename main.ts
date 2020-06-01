@@ -194,7 +194,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#f5a142"  weight=23 blockId=eureka_denkiwhite block="LED |%mode| |%pin|" group="2_電気の利用ユニット"
+  //% color="#009A00"  weight=23 blockId=eureka_denkiwhite block="LED |%mode| |%pin|" group="2_電気の利用ユニット"
   export function eureka_denkiwhite(mode: onoff, port: eureka_denki ) {
     switch (port) {
       case eureka_denki.Aﾎﾟｰﾄ:
@@ -316,7 +316,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#c3c900"  weight=8 blockId=eureka_light block="単体_光ｾﾝｻ |%pin|" group="4_センサの値"
+  //% color="#d4b41f"  weight=8 blockId=eureka_light block="単体_光ｾﾝｻ |%pin|" group="4_センサの値"
   export function tantai_light(pin: eureka_IO): number {
     switch (pin) {
       case eureka_IO.Aﾎﾟｰﾄ:
@@ -328,7 +328,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#006B8F"  weight=27 block="単体_光ｾﾝｻ |%limit| より暗い |%pin|" group="4_センサの値"
+  //% color="#d4b41f"  weight=8 block="単体_光ｾﾝｻ |%limit| より暗い |%pin|" group="4_センサの値"
   //% limit.min=0 limit.max=100
   export function tantai_Light(limit: number, pin: eureka_IO): boolean {
     switch (pin) {
@@ -357,7 +357,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#009A00" weight=25 block="単体_人が動いたら |%pin|" group="4_センサの値"
+  //% color="#009A00" weight=9 block="単体_人が動いたら |%pin|" group="4_センサの値"
   export function tantai_humanDetection(pin: eureka_IO): boolean {
     pins.setPull(DigitalPin.P14, PinPullMode.PullNone);
     pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
@@ -388,7 +388,7 @@ namespace eureka_blocks {
         break;
     }
   }
-  //% color="#858585" weight=8 blockId=eureka_human block="単体_人感ｾﾝｻ |%pin|" group="4_センサの値"
+  //% color="#858585" weight=9 blockId=eureka_human block="単体_人感ｾﾝｻ |%pin|" group="4_センサの値"
   export function eureka_human(pin: eureka_IO): number {
     switch (pin) {
       case eureka_IO.Aﾎﾟｰﾄ:
@@ -402,7 +402,7 @@ namespace eureka_blocks {
         return pins.digitalReadPin(DigitalPin.P2);
     }
   }
-  //% color="#ff7b00" weight=9 blockId=eureka_temp block="温度ｾﾝｻMCP |%pin|" group="4_センサの値"
+  //% color="#ff7b00" weight=10 blockId=eureka_temp block="温度ｾﾝｻMCP |%pin|" group="4_センサの値"
   export function eureka_temp(pin: eureka_IO): number {
     switch (pin) {
       case eureka_IO.Aﾎﾟｰﾄ:
@@ -420,7 +420,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% weight=6 blockId=sonar_ping block="超音波距離ｾﾝｻ　|%pin|" group="4_センサの値"
+  //% color="#2a2aba" weight=15 blockId=sonar_ping block="超音波距離ｾﾝｻ　|%pin|" group="4_センサの値"
   export function ping(pin: eureka_tlp): number {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
