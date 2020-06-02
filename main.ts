@@ -131,7 +131,7 @@ namespace eureka_blocks {
   export function driveForwards(second: number): void {
     basic.pause(second * 1000);
   }
-  //% color="#006B8F"  weight=27 block="光ｾﾝｻ値が |%limit| より暗い |%tlp|" group="2_電気の利用ユニット"
+  //% color="#009A00"  weight=27 block="光ｾﾝｻ値 |%limit| より暗い |%tlp|" group="2_電気の利用ユニット"
   //% limit.min=0 limit.max=100
   export function decideLight(limit: number, tlp: eureka_tlp): boolean {
     switch (tlp) {
@@ -151,7 +151,7 @@ namespace eureka_blocks {
         break;
     }
   }
-  //% color="#006B8F"  weight=26 blockId=eureka_denkitemp block="光ｾﾝｻ |%pin|" group="2_電気の利用ユニット"
+  //% color="##009A00"  weight=26 blockId=eureka_denkitemp block="光ｾﾝｻ |%pin|" group="2_電気の利用ユニット"
   export function eureka_denkitemp(pin: eureka_denki): number {
     switch (pin) {
       case eureka_denki.Aﾎﾟｰﾄ:
@@ -459,7 +459,7 @@ namespace eureka_blocks {
   }
 }
 
-//% color="#7f6107" block="ﾕｰﾚｶ車" icon="\uf1b9"
+//% color="#3943c6" block="ﾕｰﾚｶ車" icon="\uf1b9"
 namespace eureka_blocks_car {
 
   //% weight=6 blockId=sonar_ping_2 block="ﾕｰﾚｶ車距離ｾﾝｻ" group="基本のうごき"
