@@ -151,7 +151,7 @@ namespace eureka_blocks {
         break;
     }
   }
-  //% color="##009A00"  weight=26 blockId=eureka_denkitemp block="光ｾﾝｻ |%pin|" group="2_電気の利用ユニット"
+  //% color="#009A00"  weight=26 blockId=eureka_denkitemp block="光ｾﾝｻ |%pin|" group="2_電気の利用ユニット"
   export function eureka_denkitemp(pin: eureka_denki): number {
     switch (pin) {
       case eureka_denki.Aﾎﾟｰﾄ:
@@ -481,7 +481,7 @@ namespace eureka_blocks_car {
 
 
   //% blockId=servos_forward
-  //% block="前に進む　出力調整　左へ |%le| 右へ" group="基本のうごき"
+  //% block="前に進む 出力調整 左へ |%le| 右へ" group="基本のうごき"
   //% le.min=-30 le.max=30
   export function forward(le: number): void {
     pins.servoWritePin(AnalogPin.P14, 30 + le);
